@@ -1,0 +1,145 @@
+/*css variable*/
+:root{
+    --primarycolor:#FFCC00;
+    --secondarycolor:#353535;
+    --Primaryfont: "Poppins", sans-serif;
+    --secondfont: "PT Sans", sans-serif;
+}
+
+
+/*comman css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ul,
+ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1110px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    font-family:var(--Primaryfont);
+}
+.align_center{
+    align-items: center;
+}
+.btn{
+    border-radius: 20px;
+    background:var(--primarycolor);
+    
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: #fff;
+    padding:16px 45px;
+    display: inline-block;
+}
+.btn.outline{
+    padding: 16px 18px;
+    background-color: transparent;
+    border: 1px solid var(--secondarycolor);
+    color: var(--secondarycolor);
+}
+
+
+
+
+/*Navigation start here*/
+nav .logo{
+    width:30% ;
+   
+}
+nav .menu{
+   width: 70%;
+   text-align: right;
+}
+nav .menu li{
+    display: inline-block;
+}
+nav .menu li a{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color:var(--secondarycolor);
+    text-transform: uppercase;
+    padding: 18px 22px 5px;
+    display: block;
+    position: relative;
+ 
+}
+nav .menu li a::before{
+    content: "";
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    background-color: var(--secondarycolor);
+    transition: 0.40s;
+    
+    
+
+}
+/*active problem*/
+nav .menu li .active::before, 
+nav .menu li:hover a::before{
+    width: 100%;
+}
+/*Navigation end here*/
+/*Banner Start*/
+#banner{
+    padding: 56px 0 155px;
+}
+ #banner .bannercont,
+ #banner .imagecont{
+    width:50%;
+    color:var( --secondarycolo) ;
+}
+#banner .bannercont h5{
+    font-weight: 400;
+    font-size: 24px;
+}
+#banner .bannercont h1{
+      font-family: var(--secondfont);
+      font-weight: 700;
+    font-size: 64px;
+    padding: 15px 0 25px;
+}
+#banner .bannercont p{
+    
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    margin-bottom: 45px
+}
+#banner .btn.outline{
+    margin-left: 40px;
+}
+
+/*Banner End*/
+
+
+  
+ 
+
+
+
+
+
+
+
+
